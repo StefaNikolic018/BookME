@@ -6,9 +6,9 @@ BookME built with Django, Vue/TypeScript + TailwindCSS. <br />
 Frontend was built using TypeScript _v4.1.5_, npm _v8.5.5_ and Node _v14.15.5_. <br />
 Backend was built using Python _v3.10.12_ and pip _v23.2.1_.
 
-### Running
+## Running
 
-## Backend
+### Backend
 
 To start the server, we need to run the next command in "pzaztv" directory:
 
@@ -32,7 +32,7 @@ we need to go to the admin route:
 > and login with the credentials:
 > stefanikolic:stefanikolic
 
-## Frontend
+### Frontend
 
 To start the client application, we need to run the next commands in "frontend" directory:
 
@@ -46,9 +46,9 @@ We can then access the API through our localhost on the port 8080(or other one, 
 
 > http://localhost:8080/
 
-### Examples
+## Examples
 
-## UI
+### UI
 
 Home page(route: '/') where guest can see the books that we offer for their listing even when user is not logged in: ![Screenshot](screenshots/home.png)
 
@@ -60,21 +60,21 @@ _Login credentials if you don't want to create and account:_
 
 > stefan:djagno1234
 
-After logging in, user gets the identical home page like before but instead of "LOGIN" button there's a "LISTS" button:![Screenshot](screenshots/logged.jpg)
+After logging in, user gets the identical home page like before but instead of "LOGIN" button there's a "LISTS" button:![Screenshot](screenshots/logged.png)
 
-When user who's logged in clicks on "Read more" he gets an option to add a book to one of his lists if the book isn't already on it:![Screenshot](screenshots/dostoyevskiloggedin.jpg)
+When user who's logged in clicks on "Read more" he gets an option to add a book to one of his lists if the book isn't already on it:![Screenshot](screenshots/dostoyevskiloggedin.png)
 
 After adding a book to the list, that list is no longer available for that book because it's already on it.
 
-When user goes to the lists page(route: '/lists'), he can see all his lists, create new ones and manage the existing ones:![Screenshot](screenshots/lists.jpg)
+When user goes to the lists page(route: '/lists'), he can see all his lists, create new ones and manage the existing ones:![Screenshot](screenshots/lists.png)
 
-If he wants to add a new list, by clicking on the button he goes to the new list page(route: '/lists/new'):![Screenshot](screenshots/newlist.jpg)
+If he wants to add a new list, by clicking on the button he goes to the new list page(route: '/lists/new'):![Screenshot](screenshots/newlist.png)
 
-If he wants to remove some list, a modal shows and asks if it's the user is sure about it:![Screenshot](screenshots/delete.jpg)
+If he wants to remove some list, a modal shows and asks if it's the user is sure about it:![Screenshot](screenshots/delete.png)
 
-If he wants to edit some list, by the click of the button he goes to the edit page(route: '/lists/edit/:id'):![Screenshot](screenshots/editlist.jpg)
+If he wants to edit some list, by the click of the button he goes to the edit page(route: '/lists/edit/:id'):![Screenshot](screenshots/editlist.png)
 
-## Frontend
+### Frontend
 
 Based on the Vuex store that holds the User data(token,user_id, book_lists) and Book data we can create route guards and make some routes private or disable access to login and registration pages when user is logged in with the help of local storage that we use to keep the user logged in: ![Screenshot](screenshots/userstore.png)
 
@@ -82,7 +82,7 @@ Protected routes:![Screenshot](screenshots/router.png)
 
 With the use of services that we built on top of axios we fetch the data accordingly:![Screenshot](screenshots/axiosconfig.png)![Screenshot](screenshots/userdataservice.png)![Screenshot](screenshots/bookdataservice.png)
 
-## Backend
+### Backend
 
 There are two directories in the "pzaztv" directory, the other "pzaztv" directory is the configuration for the application and directory "books" is the application that we are using for the backend. <br />
 
@@ -98,9 +98,9 @@ Router in the books urls file is just registering viewset for Books model where 
 
 We have just two models that we registered to the admin dashboard and that are handling all the data that we need, because for the users we used Djangos users table:![Screenshot](screenshots/models.png)![Screenshot](screenshots/db.png)![Screenshot](screenshots/admin.png)
 
-### Libraries
+## Libraries
 
-## Frontend
+### Frontend
 
 - [Vue 3](https://vuejs.org/)
 - [Vue-Router](https://router.vuejs.org/)
@@ -109,7 +109,7 @@ We have just two models that we registered to the admin dashboard and that are h
 - [Axios](https://axios-http.com/docs/intro)
 - [TailwindCSS 3](https://tailwindcss.com/)
 
-## Backend
+### Backend
 
 - [Django 4](https://www.djangoproject.com/)
 - [Django Rest Framework](https://www.django-rest-framework.org/)
