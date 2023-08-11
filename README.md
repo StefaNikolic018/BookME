@@ -60,7 +60,7 @@ _Login credentials if you don't want to create and account:_
 
 > stefan:djagno1234
 
-After logging in, user gets the identical home page like before but instead of "LOGIN" button there's a "LISTS" button:![Screenshot](screenshots/logged.png)
+After logging in, user gets the identical home page like before but instead of "LOGIN" button there's a "LISTS" button:![Screenshot](screenshots/loggedin.png)
 
 When user who's logged in clicks on "Read more" he gets an option to add a book to one of his lists if the book isn't already on it:![Screenshot](screenshots/dostoyevskiloggedin.png)
 
