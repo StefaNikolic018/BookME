@@ -8,7 +8,19 @@ Backend was built using Python _v3.10.12_ and pip _v23.2.1_.
 
 ## Running
 
+> **_Be sure to run the application with same or similar versions of Node, npm, Python and pip!_**
+
 ### Backend
+
+To run the application we need to install some libraries first.
+Firstly we need **_Django_** itself, and then _Djoser_(that installs _Django Rest Framework_ and other dependencies), _Django Cors Headers_ for handling CORS, and _Pillow_ for handling book image fields:
+
+```
+pip3 install django
+pip3 install djoser
+pip3 install django-cors-headers
+pip3 install Pillow
+```
 
 To start the server, we need to run the next command in "pzaztv" directory:
 
